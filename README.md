@@ -62,7 +62,8 @@ _20 bodů_ tvorba a obhajoba závěrečného projektu max. 1 × 20 b. = 20 bodů
 
 **Podmínkou připuštění ke zkoušce je zisk minimálně 40 bodů.**
 
-**Zkouška**** \*) **: a/** praktická zkouška** – spočívá ve vytvoření www stránek dle zadání a
+**Zkouška**: 
+a/ **praktická zkouška** – spočívá ve vytvoření www stránek dle zadání a
  ověřuje praktické dovednosti
  b/ **ústní kolokvium** – spočívá v rozpravě o řešení praktické zkoušky
 a závěrečného projektu s hledáním alternativních cest k jejich řešení
