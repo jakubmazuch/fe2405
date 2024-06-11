@@ -1,0 +1,52 @@
+table {
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+}
+tr:nth-child(5n+1) > td:nth-child(5n+1), 
+tr:nth-child(5n+2) > td:nth-child(5n+2), 
+tr:nth-child(5n+3) > td:nth-child(5n+3),
+tr:nth-child(5n+4) > td:nth-child(5n+4),
+tr:nth-child(5n) > td:nth-child(5n)
+{
+    background-color: lime;
+}
+
+tr:nth-child(5n+1) > td:nth-child(5n+2), 
+tr:nth-child(5n+2) > td:nth-child(5n+3), 
+tr:nth-child(5n+3) > td:nth-child(5n+4),
+tr:nth-child(5n+4) > td:nth-child(5n),
+tr:nth-child(5n) > td:nth-child(5n+1)
+ {
+    background-color: limegreen;
+}
+
+tr:nth-child(5n+1) > td:nth-child(5n+3), 
+tr:nth-child(5n+2) > td:nth-child(5n+4), 
+tr:nth-child(5n+3) > td:nth-child(5n),
+tr:nth-child(5n+4) > td:nth-child(5n+1),
+tr:nth-child(5n) > td:nth-child(5n+2)
+ {
+    background-color: green;
+}
+
+tr:nth-child(5n+1) > td:nth-child(5n+4), 
+tr:nth-child(5n+2) > td:nth-child(5n), 
+tr:nth-child(5n+3) > td:nth-child(5n+1),
+tr:nth-child(5n+4) > td:nth-child(5n+2),
+tr:nth-child(5n) > td:nth-child(5n+3)
+ {
+    background-color: greenyellow;
+}
+
+tr:nth-child(5n+1) > td:nth-child(5n), 
+tr:nth-child(5n+2) > td:nth-child(5n+1), 
+tr:nth-child(5n+3) > td:nth-child(5n+2),
+tr:nth-child(5n+4) > td:nth-child(5n+3),
+tr:nth-child(5n) > td:nth-child(5n+4)
+ {
+    background-color: yellow;
+}

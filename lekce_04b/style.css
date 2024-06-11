@@ -1,0 +1,14 @@
+.pozadiZlute {
+    background-color: yellow;
+}
+.textCerveny {
+    color: red;
+}
+.textVelky {
+    font-size: 50pt;
+}
+p .odkaz {
+    font-size: 50pt;
+    color: white;
+    background-color: blue;
+}

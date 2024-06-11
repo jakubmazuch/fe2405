@@ -1,0 +1,13 @@
+
+p:nth-child(3n+1) {
+    background-color: red;
+}
+p:nth-child(3n+2) {
+    background-color: yellow;
+}
+p:nth-child(3n) {
+    background-color: green;
+}
+p::before {
+    content: "💥";
+}
