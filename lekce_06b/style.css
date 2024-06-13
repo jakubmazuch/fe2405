@@ -1,0 +1,30 @@
+ * {
+    box-sizing: border-box;
+ }
+.sloupec {
+    float: left;
+    text-align: justify;
+    padding: 10px;
+    border: 1px solid black;
+}
+.w1 {
+    width: 20%;
+}
+.w2 {
+    width: 40%;
+}
+.barva1 {
+    background-color: rgb(255, 255, 164);
+}
+.barva2 {
+    background-color: rgb(255, 164, 164);
+}
+.barva3 {
+    background-color: rgb(167, 255, 164);
+}
+
+@media screen and (max-width: 800px) {
+    .w1, .w2 {
+        width: 100%;
+    }
+}
