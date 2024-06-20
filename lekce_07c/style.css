@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.item {
+    padding: 20px;
+    text-align: justify;
+    border: 1px solid black;
+}
+.w1 {
+    flex: 1;
+}
+.w2 {
+    flex: 3;
+}
+.barva1 {
+    background-color: rgb(184, 184, 255);
+}
+.barva2 {
+    background-color: rgb(177, 255, 177);
+}
+.barva3 {
+    background-color: rgb(252, 173, 173);
+}
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+}
