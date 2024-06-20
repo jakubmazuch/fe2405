@@ -1,0 +1,18 @@
+p::first-letter {
+    font-size: xx-large;
+    text-decoration: underline;
+    color: red;
+    font-weight: bold;
+}
+p:nth-child(even) {
+    background-color: rgb(204, 204, 204);
+}
+p:nth-child(3n+1)::after {
+    content: " - 🔴";
+}
+p:nth-child(3n+2)::after {
+    content: " - 🟡";
+}
+p:nth-child(3n)::after {
+    content: " - 🟢";
+}
