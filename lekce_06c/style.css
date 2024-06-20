@@ -1,0 +1,39 @@
+.text {
+    border-bottom: 1px dotted grey;
+    cursor: help;
+    position: relative;
+}
+.text .vysvetlivka {
+    visibility: hidden;
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+}
+
+.text:hover .vysvetlivka {
+    visibility: visible;
+}
+
+.img {
+    max-width: 148px;
+}
+
+.vysvetlivka a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(85, 230, 255);
+    border: 1px solid rgb(85, 230, 255);
+    padding: 5px;
+}
+.vysvetlivka a:hover {
+    background-color: rgb(85, 230, 255);
+    color: black;
+    text-decoration: underline;
+}
