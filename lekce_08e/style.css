@@ -1,0 +1,21 @@
+tr.r1 {
+    counter-reset: r1;
+}
+tr.r1 > td::before {
+    counter-increment: r1;
+    content: counter(r1);
+}
+tr.r2 {
+    counter-reset: r2;
+}
+tr.r2 > td::before {
+    counter-increment: r2 2;
+    content: counter(r2);
+}
+tr.r3 {
+    counter-reset: r3;
+}
+tr.r3 > td::before {
+    counter-increment: r3 3;
+    content: counter(r3);
+}
