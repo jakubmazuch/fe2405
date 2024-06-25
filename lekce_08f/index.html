@@ -16,7 +16,7 @@
                     <label for="jmeno">Jméno: </label>
                 </div>
                 <div class="col-75">
-                    <input type="text" name="jmeno" id="jmeno">
+                    <input type="text" name="jmeno" id="jmeno" placeholder="Napiste své jméno...">
                 </div>
             </div>
             <div class="row">
@@ -24,7 +24,7 @@
                     <label for="prijmeni">Příjmení: </label>
                 </div>
                 <div class="col-75">
-                    <input type="text" name="prijmeni" id="prijmeni">
+                    <input type="text" name="prijmeni" id="prijmeni" placeholder="Napište své příjmení...">
                 </div>
             </div>
             <div class="row">
@@ -32,10 +32,26 @@
                     <label for="zeme">Požadovaná země: </label>
                 </div>
                 <div class="col-75">
-                    <select name="" id="">
-                        <option value=""></option>
+                    <select name="zeme" id="zeme">
+                        <option value="sk">Slovensko</option>
+                        <option value="hu">Maďarsko</option>
+                        <option value="it">Itálie</option>
+                        <option value="ht">Haiti</option>
+                        <option value="au">Rakousko</option>
+                        <option value="pl">Polsko</option>
                     </select>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="predmet">Předmět: </label>
+                </div>
+                <div class="col-75">
+                    <textarea name="predmet" id="predmet" placeholder="Máte něco na srdci?" rows="15"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Podat přihlášku">
             </div>
         </form>
     </div>
