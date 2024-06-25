@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    counter-reset: cislo;
+}
+.item {
+    border: 1px solid black;
+    width: 20%;
+    padding: 50px;
+    text-align: center;
+}
+.item:nth-child(even) {
+    background-color: brown;
+}
+.item:nth-child(odd) {
+    background-color: rgb(221, 185, 185);
+}
+.item::after {
+    counter-increment: cislo 5;
+    content: counter(cislo);
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-flow: column nowrap;
+    }
+    .item {
+        width: 100%;
+    }
+}
