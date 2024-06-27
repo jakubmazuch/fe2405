@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přechody</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin-bottom: 10px;
+        }
+        div:hover {
+            width: 300px;
+            background-color: yellow;
+        }
+        .linear {
+            transition: 
+                background-color 3s linear, 
+                width 3s linear;
+        }
+        .ease {
+            transition: width 4s ease-in;
+        }
+        .vlastni {
+            transition: width 4s cubic-bezier(1,-0.02,1,-0.26) 1s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Přechody</h1>
+    <div class="linear"></div>
+    <div class="ease"></div>
+    <div class="nic"></div>
+    <div class="vlastni"></div>
+</body>
+</html>
