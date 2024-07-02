@@ -1,0 +1,23 @@
+.animace {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    /* info o animaci */
+    animation-name: animace;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes animace {
+    0% {
+        left: 0;
+        background-color: yellow;
+    }
+    50% {
+        left: 100px;
+        background-color: darkred;
+    }
+    100% {
+        left: 0;
+        background-color: yellow;
+    }
+}
