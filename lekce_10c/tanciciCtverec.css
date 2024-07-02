@@ -1,0 +1,14 @@
+.ctverec {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: ctverec 3s ease-in-out 0s infinite alternate ;
+}
+@keyframes ctverec {
+    0%      {left: 0px; top: 0px; background-color: red;}
+    25%     {left: 200px; top: 0; background-color: yellow;}
+    50%     {left: 200px; top: 200px; background-color: blue;}
+    75%     {left: 0px; top: 200px; background-color: green;}
+    100%    {left: 0; top: 0; background-color: red;}
+}
