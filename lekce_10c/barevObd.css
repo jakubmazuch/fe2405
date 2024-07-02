@@ -1,0 +1,34 @@
+.obdelnik {
+    width: 0px;
+    height: 30px;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.animace1 {
+    background-color: red;
+    animation-name: animace1;
+}
+@keyframes animace1 {
+    100%    {width: 250px;}    
+}
+.animace2 {
+    background-color: green;
+    animation-name: animace2;
+}
+@keyframes animace2 {
+    100%    {width: 400px;}    
+}
+.animace3 {
+    background-color: yellow;
+    animation-name: animace3;
+}
+@keyframes animace3 {
+    100%    {width: 300px;}    
+}
+.animace4 {
+    background-color: purple;
+    animation-name: animace4;
+}
+@keyframes animace4 {
+    100%    {width: 650px;}    
+}
