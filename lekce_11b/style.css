@@ -1,0 +1,16 @@
+.pozadi {
+    background-color: grey;
+}
+.kruh1 {
+    fill: yellow;
+}
+.kruh2 {
+    fill: grey;
+}
+.krizek_pozadi {
+    fill: red;
+}
+.krizek_cara {
+    stroke: white;
+    stroke-width: 10;
+}
