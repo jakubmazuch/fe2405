@@ -1,0 +1,41 @@
+.vodnik {
+    background-color: rgb(134, 175, 51);
+    color: white;
+    text-shadow: 2px 2px 7px black;
+}
+
+.btn-moje {
+    background: transparent;
+    border-color: white;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.btn-moje:hover {
+    background: white;
+    color: black;
+}
+
+/* Ikony */
+.zprava {
+    background-image: url("img/zprava.png");
+    background-repeat: no-repeat;
+    background-position: 10px 8px;
+}
+
+.email {
+    background-image: url("img/email.png");
+    background-repeat: no-repeat;
+    background-position: 10px 8px;
+}
+
+.tel {
+    background-image: url("img/telefon.png");
+    background-repeat: no-repeat;
+    background-position: 10px 8px;
+}
+.zprava:focus, 
+.tel:focus, 
+.email:focus {
+    background-image: none;
+}
