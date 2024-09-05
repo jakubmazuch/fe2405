@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let aktCas = new Date();
+        if ((aktCas.getHours() >= 6) && (aktCas.getHours() < 9)) {
+            document.write("Dobrý ráno.");
+        }
+        else if ((aktCas.getHours() >= 9) && (aktCas.getHours() < 12)) {
+            document.write("Dobré dopoledne.");
+        }
+        else if ((aktCas.getHours() >= 12) && (aktCas.getHours() < 14)) {
+            document.write("Dobré poledne.");
+        }
+        else if ((aktCas.getHours() >= 14) && (aktCas.getHours() < 18)) {
+            document.write("Dobré odpoledne.");
+        }
+        else if ((aktCas.getHours() >= 18) && (aktCas.getHours() < 22)) {
+            document.write("Dobrý večer.");
+        }
+        else {
+            document.write("Dobrou noc!");
+        }
+
+        document.write("<br>");
+
+        let cislo = parseInt(prompt("Zadejte číslo v rozmezí 10-20 nebo 30-40:"));
+        if (((cislo >= 10) && (cislo <= 20)) || ((cislo >= 30) && (cislo <= 40))) {
+            document.write("OK");
+        }
+        else {
+            document.write("Špatně");
+        }
+
+        document.write("<br>");
+
+        let hodnota = parseInt(prompt("Zadej číslo:"));
+        let slovy;
+
+        if (hodnota == 1) {
+            slovy = "jedna";
+        } else if (hodnota == 2) {
+            slovy = "dva";
+        } else if (hodnota == 3) {
+            slovy = "tři";
+        } else {
+            slovy = "nevím";
+        }
+        
+        document.write(slovy);
+
+    </script>
+</body>
+</html>

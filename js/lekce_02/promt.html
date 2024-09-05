@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+</head>
+<body>
+    <script>
+        let vstup = prompt("Zadejte nějaký text: ");
+        document.write("Zadaný text: " + vstup);
+
+        document.write("<br>");
+
+        let a = parseInt(prompt("Zadej číslo a: "));
+        let b = parseInt(prompt("Zadej číslo b: "));
+        document.write("Součet zadaných čísel: " + (a + b));
+
+        document.write("<br>");
+
+        let cislo = parseInt(prompt("Zadejte číslo: "));
+        if (cislo > 100) {
+            document.write("Číslo je větší než 100.");
+        } else {
+            document.write("Číslo je menší než 100.");
+        }
+
+        document.write("<br>");
+
+        document.write(Math.sqrt(100));
+    </script>
+    
+</body>
+</html>

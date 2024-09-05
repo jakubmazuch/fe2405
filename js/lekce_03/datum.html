@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datum a čas</title>
+</head>
+
+<body>
+    <script>
+        let date = new Date();
+        let den = "";
+        switch (date.getDay()) {
+            case 0:
+                den = "neděle"
+                break;
+            case 1:
+                den = "pondělí"
+                break;
+            case 2:
+                den = "úterý"
+                break;
+            case 3:
+                den = "středa"
+                break;
+            case 4:
+                den = "čtvrtek"
+                break;
+            case 5:
+                den = "pátek"
+                break;
+            case 6:
+                den = "sobota"
+                break;
+            default:
+                den = ""
+        }
+
+        document.write("Dnes je: " + den + " " + date.getDate() + ". " + (date.getMonth() + 1) + ". " + date.getFullYear() + "<br>");
+        document.write("Čas: " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
+            
+    </script>
+</body>
+
+</html>

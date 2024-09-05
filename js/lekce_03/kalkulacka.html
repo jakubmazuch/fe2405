@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let volba = parseInt(prompt("Zadejte číslo operace:\n1 - sčítání\n2 - odčítání\n3 - násobení\n4 - dělení"));
+        let a = parseInt(prompt("Zadejte prvni cislo: "));
+        let b = parseInt(prompt("Zadejte druhe cislo: "));
+
+        document.write("Vítejte v kalkulačce <br />");
+
+        let priklad = "";
+
+        switch (volba) {
+            case 1:
+                priklad = `${a} + ${b} = ${a + b}`;
+                break;
+            case 2:
+                priklad = `${a} - ${b} = ${a - b}`;
+                break;
+            case 3:
+                priklad = `${a} * ${b} = ${a * b}`;
+                break;
+            case 4:
+                if (b == 0) {
+                    priklad = "Chyba. Nulou nelze dělit."
+                    break;
+                }
+                else {
+                    priklad = `${a} / ${b} = ${a / b}`;
+                    break;
+                }
+            default:
+                priklad = "Neplatná volba";
+        }
+
+        document.write("Výsledek: " + priklad + "<br />");
+
+        document.write("<br />Děkuji za použití kalkulačky.");
+    </script>
+</body>
+
+</html>
