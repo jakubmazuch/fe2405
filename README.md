@@ -15,6 +15,10 @@ Hlavním cílem kurzu je vytrénovat studenty samostatně řešit úlohy, navrho
 
 V rámci kurzu budou studenti okrajově seznámeni s vektorovou webovou grafikou a značkovacím jazykem SVG.
 
+Studenti se seznámí se základními principy a strategiemi frontendové části tvorby webu. Kurz systematicky seznámí studenty s hlavními technologiemi tvorby webu – Skriptování na straně klienta - JavaScript. 
+
+Hlavním cílem kurzu je vytrénovat studenty samostatně řešit úlohy, navrhovat vhodná řešení technických zadání a získat schopnosti orientace ve zdrojovém kódu. Kurz rovněž připravuje studenty do frontendové praxe.
+
 ## Sylabus
 
 1. Úvod do problematiky tvorby webu 2 lekce
@@ -23,6 +27,9 @@ V rámci kurzu budou studenti okrajově seznámeni s vektorovou webovou grafikou
 4. Grafický formát a značkovací jazyk SVG 2 lekce
 5. CSS frameworky: Bootstrap / Materialize 6 lekcí
 6. CSS preprocesor: Less /Sass 4 lekce
+7. Základy JavaScriptu
+8. Objektově orientvané programování v JavaScriptu
+9. Jemný úvod do frameworků (React / Anglular)
 
 ## Doporučovaný software, literatura a další zdroje
 
@@ -130,8 +137,32 @@ _Zkouška bude realizována v aplikačním prostředí korespondujícím s výuk
 - Materialize
 - CK editor
 
-### CSS preprocesor: Less
+### CSS preprocesor: Sass
 
 - Proměnné
 - Podmínky, boolean
 - Funkce
+- Úvod do JavaScriptu
+
+### Základy JavaScriptu
+
+- Proměnná
+- Podmínky if-else, switch
+- Cykly for a while
+- Pole v JavaScriptu, řazení prvků, 2D pole; Textové řetězce
+- Funkce; Základy práce s DOM, události, manipulace s DOM, tvorba elementů a hierarchie
+- Knihovna Math; Časovače a animace
+- Sběr dat z formuláře. Ověřování formulářů; Obrázky a kreslení na canvas
+
+### Objektově orientvané programování v JavaScriptu
+
+- Úvod do OOP, vlastnosti objektu a konstruktory; Referenční a hodnotové datové typy
+- Regulární výrazy, Datová úložiště, formát JSON
+- AJAX; dědičnost a polymorfismus, vlastnosti objektů; Data/Accessor deskriptory
+- Statika, zapouzdření, anonymní objekty a prototypy; Modulární programování, asynchronní operace a callbacky, promisy
+- Asynchronní požadavky s využitím fetch API
+- Úvod do jQuery, vkládání obsahu (DOM), 
+- Nahrazování obsahu & klonování, odstraňování
+- Třídy, selektory
+
+
