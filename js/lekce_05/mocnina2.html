@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let zaklad = parseInt(prompt("Zadejte základ mocniny: "));
+        let exp = parseInt(prompt("Zadejte exponent: "));
+
+        let vysledek = 1;
+
+        if (exp >= 0) {
+            for (let i = 1; i <= exp; i++) {
+                vysledek *= zaklad;
+                document.write("pro i=" + i + " je vysledek: " + zaklad + "^" + i + "=" + vysledek + "<br>");
+            }
+
+            document.write("<br><br><b>konečný výsledek: " + zaklad + "^" + exp + "=" + vysledek + "</b>");
+
+        }
+        else {
+            for (let i = -1; i >= exp; i--) {
+                vysledek *= zaklad;
+                document.write("pro i=" + i + " je vysledek: " + zaklad + "^" + i + "=" + (1/vysledek) + "<br>");
+            }
+            document.write("<br><br><b>konečný výsledek: " + zaklad + "^" + exp + "=" + (1/vysledek) + "</b>");
+        }
+
+
+
+    </script>
+</body>
+
+</html>

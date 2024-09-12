@@ -8,7 +8,18 @@
 </head>
 
 <body>
-    tady nic není :-))
+    <script>
+
+        let zaklad = parseInt(prompt("Zadejte základ mocniny: "));
+        let exp = parseInt(prompt("Zadejte exponent: "));
+
+        let vysledek = 1;
+        for (let i = 1; i <= exp; i++) {
+            vysledek *= zaklad;
+            document.write("pro i=" + i + " je vysledek: " + zaklad + "^" + i + "=" + vysledek + "<br>");
+        }
+        document.write("<br><br><b>konečný výsledek: " + zaklad + "^" + exp + "=" + vysledek + "</b>");
+    </script>
 </body>
 
 </html>
