@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // dvoudimenzionalni pole [hodnota, váha]
+        let cisla = [
+            [1,5],
+            [2,1],
+            [1,4],
+            [2,2],
+            [5,3],
+            [1,5],
+            [3,6],
+            [3,5],
+            [5,1000]
+        ];
+
+        let soucetHodnot = 0;
+        let soucetVah = 0;
+
+        for (let i of cisla) {
+            let hodnota = i[0]; // nulty index prvků pole
+            let vaha = i[1];    // prvni index prvků pole
+
+            soucetHodnot += hodnota * vaha; 
+            soucetVah += vaha;
+        }
+
+        document.write("Vážený průměr je " + (soucetHodnot / soucetVah))
+    </script>
+</body>
+</html>

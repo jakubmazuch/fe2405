@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pole</title>
+</head>
+
+<body>
+    <script>
+        let kosik = ["mandarinka", "banan", "nektarinka", "jablko"];
+        document.write(kosik.length);
+
+        for (let i = 0; i < kosik.length; i++) {
+            document.write(kosik[i] + "<br>");
+        }
+
+        document.write("<hr>");
+
+        let cisla = [];
+        for (let i = 0; i < 100; i++) {
+            cisla[i] = i + 1;
+        }
+        for (let i = 0; i < cisla.length; i++) {
+            document.write(cisla[i] + ", ");
+        }
+
+        document.write("<hr>");
+
+        let jinaCisla = [];
+        for (let i = 0; i < 100; i++) {
+            jinaCisla[i] = i + 1;
+        }
+        for (let x of jinaCisla) {
+            document.write(x + ", ");
+        }
+
+
+    </script>
+</body>
+
+</html>

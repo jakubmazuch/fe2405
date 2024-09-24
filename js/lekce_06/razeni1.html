@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let jmena = ["Daniel", "Filoména", "Cyril", "Adalbert", "Barbora", "Norbert", "Richard"];
+        jmena.sort();
+        for (let clovek of jmena) {
+            document.write(clovek + "<br>");
+        }
+
+        document.write("<hr>")
+
+        jmena.reverse();
+        for (let clovek of jmena) {
+            document.write(clovek + "<br>");
+        }
+
+        document.write("<hr>")
+
+        let cisla = [5, 3, 32, 33, 25, 11, 18, 42]
+        cisla.sort(function(a,b) {return a-b});
+        for (let i of cisla) {
+            document.write(i + "<br>");
+        }
+
+        
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // splice mazání
+        let ovoce = ["jablko", "hruška", "banán", "malina", "jahoda", "meruňka", "kiwi", "švestka"]; // 8 prvků (0-7)
+        for (ovoce1 of ovoce) {
+            document.write(ovoce1 + " | ");
+        }
+        document.write("<br>");
+
+        ovoce.splice(2, 3);
+        for (ovoce1 of ovoce) {
+            document.write(ovoce1 + " | ");
+        }
+        document.write("<br>");
+
+        ovoce.splice(2);
+        for (ovoce1 of ovoce) {
+            document.write(ovoce1 + " | ");
+        }
+        document.write("<br>");
+        document.write("<br>");
+
+        // splice přidání prvku
+
+        ovoce.splice(2, 0, "pomeranč");
+        for (ovoce1 of ovoce) {
+            document.write(ovoce1 + " | ");
+        }
+        document.write("<br>");
+        document.write("<br>");
+
+        // nahrazení prvku
+        ovoce.splice(1, 1, "borůvka");
+        for (ovoce1 of ovoce) {
+            document.write(ovoce1 + " | ");
+        }
+        document.write("<br>");
+
+        ovoce.splice(1, 2, "meloun vodní");
+        for (ovoce1 of ovoce) {
+            document.write(ovoce1 + " | ");
+        }
+        document.write("<br>");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid rgb(182, 182, 182);
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let matice = [];
+
+        // nejprve celou matici vynuluji
+        for (let i = 0; i < 5; i++) {
+            matice[i] = [];
+            for (let j = 0; j < 5; j++) {
+                matice[i][j] = 0;
+            }
+        }
+
+        // nyni prepisuji vyjimky ve 3., 4. a 5. radku
+        // 3. radek (natvrdo, mam jen jeden prvek)
+        matice[2][2] = 1;
+
+        // 4. radek
+        for (let i = 1; i < 4; i++) {
+            matice[3][i] = 1;
+        }
+
+        //5. radek
+        for (let i = 0; i < 5; i++) {
+            matice[4][i] = 1;
+        }
+
+
+        // vypisuji matici
+        document.write('<table>');
+
+        for (let radek of matice) {
+            document.write('<tr>');
+            for (let prvek of radek) {
+                document.write(`<td>${prvek}</td>`);
+            }
+            document.write('</tr>');
+        }
+
+        document.write('</table>');
+    </script>
+</body>
+
+</html>

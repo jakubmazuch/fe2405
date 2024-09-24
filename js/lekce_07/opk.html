@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cisla = [15, 52, 65, 87, 125, 47, 0, 1555];
+        
+        let w = cisla[6];
+        cisla[6] = cisla[4];
+        cisla[4] = w;
+
+        document.write(cisla[5]);
+
+        document.write("<br>");
+
+        for (let i of cisla) {
+            document.write(`${i}🤓`);
+        }
+
+        document.write("<br>");
+
+        cisla.splice(4,0,88);
+        for (let i of cisla) {
+            document.write(`${i}🧠`);
+        }
+
+        document.write("<br>");
+
+        let soucet = 0;
+        let pocetPrvku = cisla.length;
+
+        for (let w of cisla) {
+            soucet += w;
+        }
+
+        document.write("Σ = " + soucet);
+        document.write("<br>")
+        document.write("⌀ = " + (soucet/pocetPrvku));
+
+    </script>
+</body>
+</html>

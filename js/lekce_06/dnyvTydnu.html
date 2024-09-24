@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dny = ["neděle", "pondělí", "úterý", "středa", "čtvrtek", "pátek", "sobota"];
+        let dnes = new Date();
+        let denTydne = dnes.getDay();
+
+        document.write("Dnes je " + dny[denTydne]);
+    </script>
+</body>
+</html>

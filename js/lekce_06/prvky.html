@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let dny = ["pondělí", "úterý", "středa", "čtvrtek", "pátek"];
+        dny.push("sobota"); // vložím na konec pole "sobota"
+        dny.unshift("neděle"); // vložím na začátek pole "neděle"
+
+        for (let den of dny) {
+            document.write(den + "<br>");
+        }
+
+        document.write("<hr>");
+
+        dny.pop();  // odstraní poslední prvek v poli (sobota)
+        dny.shift() // odstaní první prvek v poli (neděle)
+        
+        for (let den of dny) {
+            document.write(den + "<br>");
+        }
+
+    </script>
+</body>
+
+</html>
