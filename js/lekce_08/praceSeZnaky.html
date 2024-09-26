@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let jazyk = "JavaScript";
+        document.write(jazyk+ "<br>");
+        document.write(jazyk[0] + jazyk[4] + jazyk[15] + "<br>");
+
+        //charAt()
+        document.write(jazyk.charAt(0) + jazyk.charAt(4) + jazyk.charAt(15) + "<br>");
+
+        //indexOf() + lastIndexOf()
+        document.write(jazyk.indexOf("a") + "<br>");
+        document.write(jazyk.indexOf("s") + "<br>");
+        document.write(jazyk.lastIndexOf("a") + "<br>");
+
+        // substring()
+        document.write(jazyk.substring(3,5) + "<br>");
+        document.write(jazyk.substring(3) + "<br>");
+
+        // charCodeAt() - převede znak na ASCII hodnotu
+        let hodnotaAscii = jazyk.charCodeAt(0);
+        let znak = jazyk[0];
+        let hodnotaHex = hodnotaAscii.toString(16).toUpperCase();
+        document.write(`Znak <b>${znak}</b> má ASCII DEC <b>${hodnotaAscii}</b> a ASCII HEX <b>${hodnotaHex}</b><br>`);
+
+        // String.fromCharCode - z ASCII na znak
+        hodnotaAscii = 102;
+        znak = String.fromCharCode(hodnotaAscii);
+        document.write(`Znak s ASCII dekadickým kódem <b>'${hodnotaAscii}'</b> odpovídá <b>'${znak}'</b><br>`);
+ 
+    </script>
+</body>
+</html>

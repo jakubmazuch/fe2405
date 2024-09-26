@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pozdrav = "ahoj";
+        let osloveni = "kamarade";
+        let pribuzny = "strejcek";
+
+        document.write(osloveni.localeCompare(pozdrav));
+        document.write(osloveni.localeCompare(pribuzny));
+        document.write(osloveni.localeCompare(osloveni));
+        document.write("<hr>");
+
+        // join()
+        let ovoce = ['jablko', 'pomeranc', 'banan', 'tresen'];
+        let veta = ovoce.join(', ');
+        document.write(veta);
+        document.write("<hr>");
+
+        let cisla = [1, 2, 3, 4, 5, 6];
+        for (let i of cisla) {
+            document.write(i + "<br>");
+        }
+        document.write(cisla.join("<br>"));
+        document.write("<hr>");
+
+        // split()
+        let otazka = "Kolik slonu zije na Marsu?"
+        let slova = otazka.split("i");
+        document.write(slova[1] + "<br>");
+        document.write(otazka + "<br>");
+        document.write(slova.join("Q"));
+
+        
+
+    </script>
+</body>
+</html>
