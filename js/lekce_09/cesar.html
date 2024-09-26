@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // inicializace proměnných
+        let puvodniZprava = "zebra";
+        document.write("<b>Původní zpráva:</b> " + puvodniZprava + "<br>");
+        
+        let zasifrovanaZprava = "";
+        let posun = 2;
+
+        // práce s konkrétními znaky
+        for (let i = 0; i < puvodniZprava.length; i++) {
+            let ascii = puvodniZprava.charCodeAt(i);
+            ascii += posun;
+
+            //Kontrola přetečení
+            if (ascii > "z".charCodeAt(0)) {
+                ascii -= 26;
+            }
+
+            let znak = String.fromCharCode(ascii);
+            zasifrovanaZprava += znak;
+        }
+
+        // výpis
+        document.write("<b>Zašifrovaná zpráva:</b> " + zasifrovanaZprava + "<br>");
+
+    </script>
+</body>
+</html>

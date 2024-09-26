@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let sifrovanaZprava = "--..|.|-...|.-.|.-|";
+        let dekodovanaZprava = "";
+
+        let abeceda = "abcdefghijklmnopqrstuvwxyz";
+        let morseovka = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."]
+
+        // rozdělim šifrovanou zprávu na jednotlivé znaky
+        let znaky = sifrovanaZprava.split("|");
+
+        //iterace znaků
+        for (let morseuvZnak of znaky) {
+            let abecedniZnak = "";
+            let index = morseovka.indexOf(morseuvZnak);
+            if (index >= 0) {
+                abecedniZnak = abeceda.charAt(index);
+            }
+            dekodovanaZprava += abecedniZnak;
+        }
+
+        document.write("<b>Původní zpráva:</b> " + sifrovanaZprava + "<br>");
+        document.write("<b>Dekódovaná zpráva:</b> " + dekodovanaZprava + "<br>");
+
+
+    </script>
+</body>
+
+</html>
