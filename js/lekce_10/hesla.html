@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function genHesel (delka, pocetVelkych, pocetCisel, pocetSpec) {
+            const velka = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            const mala = 'abcdefghijklmnopqrstuvwxyz';
+            const cisla = '0123456789';
+            const spec = '?!#&@|€\+*/÷×¤ß$-_%<>{}()[].,°;^~';
+
+            let heslo = '';
+
+            // velká písmena
+            for (let i = 0; i < pocetVelkych; i++) {
+                heslo += velka.charAt(Math.floor(Math.random() * velka.length));
+            }
+            // čísla
+            for (let i = 0; i < pocetCisel; i++) {
+                heslo += cisla.charAt(Math.floor(Math.random() * cisla.length));
+            }
+            // spec. znaky
+            for (let i = 0; i < pocetSpec; i++) {
+                heslo += spec.charAt(Math.floor(Math.random() * spec.length));
+            }
+            // zbývající znaky doplnit malými písmeny
+            for (let i = heslo.length; i < delka; i++) {
+                heslo += mala.charAt(Math.floor(Math.random() * mala.length));
+            }
+
+            heslo = heslo.split('').sort(() => 0.5 - Math.random()).join('');
+            return heslo;
+        }
+
+
+        const delkaUzivatel = 50;
+        const pocetVelkychUzivatel = 15;
+        const pocetCiselUzivatel = 20;
+        const pocetSpecUzivatel = 10;
+
+        document.write(genHesel(delkaUzivatel, pocetVelkychUzivatel, pocetCiselUzivatel, pocetSpecUzivatel));
+
+    </script>
+</body>
+</html>
