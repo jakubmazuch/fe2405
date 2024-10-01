@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulačka</title>
+</head>
+<body>
+    <h1>Kalkulačka</h1>
+    <input type="text" id="cislo1"> + <input type="text" id="cislo2">
+    <button id="tlacitko">Sečti!</button>
+
+    <script>
+        let tlacitko = document.getElementById("tlacitko");
+        let cislo1 = document.getElementById("cislo1");
+        let cislo2 = document.getElementById("cislo2");
+
+        function soucet() {
+            alert(parseFloat(cislo1.value) + parseFloat(cislo2.value));
+        }
+
+        tlacitko.onclick = soucet;
+
+    </script>
+</body>
+</html>
