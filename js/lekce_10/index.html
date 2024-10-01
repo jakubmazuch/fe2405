@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function emailAdresy(pole) {
+            let link = '';
+            for (let i = 0; i < pole.length; i++) {
+                link += `<a href="${pole[i]}">${pole[i]}</a><br>`;
+            }
+            return link;
+        }
+
+        const emaily = [
+            "jan.novak@emailzebra.com",
+            "petra.horakova@cloudmail.cz",
+            "tomas.kralik@fakemail.net",
+            "alena.vodickova@onlinemail.org",
+            "david.korinek@randommail.com",
+            "lucie.machova@fakemail.cz",
+            "petr.svoboda@webmailer.com",
+            "eva.dvorakova@samplemail.org",
+            "martin.kostka@internetz.cz",
+            "vera.vesela@digitalmail.net",
+            "lenka.cejkova@tempmail.org",
+            "jiri.havlicek@myemailbox.com",
+            "marcela.jandova@fastmailer.cz",
+            "katerina.kovarova@cloudservice.com",
+            "michal.pokorny@quickmail.net",
+            "jana.sedlakova@webmails.cz",
+            "tomas.vlcek@netmailer.org",
+            "milan.benes@fakemailbox.com",
+            "barbora.novotna@coolmailer.cz",
+            "petr.marek@sampleemail.net"
+        ];
+
+        document.write(emailAdresy(emaily));
+    </script>
+</body>
+
+</html>

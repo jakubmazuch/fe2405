@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function zkrat(text, delka) {
+            if (text.length - 3 > delka) {
+                text = text.substring(0, delka-3) + "...";
+            }
+            return text;
+        }
+
+        text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In dapibus augue non sapien. Aenean placerat. Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. Vestibulum fermentum tortor id mi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Nullam dapibus fermentum ipsum. Fusce suscipit libero eget elit. Etiam posuere lacus quis dolor. Integer pellentesque quam vel velit. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Praesent id justo in neque elementum ultrices. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Mauris tincidunt sem sed arcu.";
+        zkraceny = zkrat(text, 30);
+
+        document.write("<b>původní text: </b>" + text + "<br>");
+        document.write("<b>zkrácený text: </b>" + zkraceny + "<br>");
+
+    </script>
+</body>
+</html>
