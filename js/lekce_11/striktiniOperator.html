@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write('Rovnost hodnotou (1 == "1"): ' + (1 == '1'));
+        document.write('<br>');
+        document.write('Rovnost hodnotou a typem (1 === "1"): ' + (1 === '1'));
+        document.write('<br>');
+        document.write((5 !== '5'));
+        document.write('<br><hr><br>');
+        let jmeno = prompt("Vaše jméno");
+        if(jmeno) {
+            document.write('OK ' + jmeno);
+        }
+        else {
+            document.write('Chyba. Jméno nebylo vyplněno')
+        }
+
+
+    </script>
+</body>
+</html>
