@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knihovna Math</title>
+</head>
+<body>
+    <script>
+        let x = 1.7678;
+        let y = 2.2e-5; // 0.000022  nebo 22*10^-6
+        let id = 228;
+
+        document.write(isNaN(y) + "<br>");
+        document.write(x.toExponential(5) + "<br>");
+        document.write(typeof id.toString(2) + "<br>");
+
+        let max = Number.MAX_VALUE;
+        let min = Number.MIN_VALUE;
+        document.write("JavaScropt umí pracovat s čísly mezi " + min + " a " + max + ".<br>");
+
+        document.write(Math.log(Math.E));
+    </script>
+</body>
+</html>
